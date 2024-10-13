@@ -1,0 +1,6 @@
+<div>
+    <h3>Second Child Component (OnPush Change Detection)</h3>
+    <p>Child Component Simple Counter: {{ simpleCounter }}</p>
+    <p>Child Component Seconds Counter From Observable: {{ secondsCounterObservable$ | async }}</p>
+    <button (click)="updateChildData()">Update Counter Value</button>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <h2>Parent Component (Default Change Detection)</h2>
+    <p>Seconds Counter: {{ secondsCounter }}</p>
+    <p>Primitive Data: {{ primitiveData }}</p>
+    <p>Non-Primitive Data: {{ nonPrimitiveData.value }}</p>
+    <button (click)="updatePrimitive()">Update Primitive</button>
+    <button (click)="updateNonPrimitive()">Update Non-Primitive</button>
+
+    <div class="divider"></div>
+    <app-child [primitiveData]="primitiveData" [nonPrimitiveData]="nonPrimitiveData"></app-child>
+
+    <div class="divider"></div>
+    <app-second-child></app-second-child>
+</div>
