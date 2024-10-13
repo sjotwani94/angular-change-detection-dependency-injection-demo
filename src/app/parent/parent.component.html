@@ -5,6 +5,7 @@
     <p>Non-Primitive Data: {{ nonPrimitiveData.value }}</p>
     <button (click)="updatePrimitive()">Update Primitive</button>
     <button (click)="updateNonPrimitive()">Update Non-Primitive</button>
+    <button (click)="logMessageToConsole()">Log Message To Console</button>
 
     <div class="divider"></div>
     <app-child [primitiveData]="primitiveData" [nonPrimitiveData]="nonPrimitiveData"></app-child>
